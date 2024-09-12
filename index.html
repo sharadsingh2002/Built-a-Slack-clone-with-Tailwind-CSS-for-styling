@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<style>
+    
+</style>
+
+
+
+<body>
+
+
+    <nav class="h-16 w-full 2xl:h-20 z-50 nav_content ">
+        <div
+            class=" flex justify-between items-center h-full w-full px-6 xl:m-auto md:rounded-full xl:w-[1300px] xl:justify-between md:m-auto xl:h-20 bg-white">
+
+            <div class="2xl:h-10 2xl:w-40 flex items-center md:h-10">
+                <img class="h-9 2xl:h-9 2xl:w-24" src="./footage/slack-salesforce-logo-nav-black.png" alt="">
+            </div>
+
+            <div class="flex justify-between gap-6 lg:hidden md:flex">
+                <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                <i class="fa-solid fa-bars text-lg barsIcon cursor-pointer"></i>
+            </div>
+
+            <div class="hidden 2xl:flex 2xl:justify-between md:hidden gap-4 lg:flex sm:hidden">
+
+                <ul class="flex items-center gap-7 w-[672px] font-bold list-none">
+
+                    <li class="relative"> <a href="#" class="navlink">Features <i
+                                class="fa-solid fa-angle-down text-xs font-bold icon "></i> </a>
+                        <div class="showDropDown w-[970px] bg-white absolute top-[40px] -left-8 pl-2 z-50 gap-2 shadow-custom-all-directions rounded-2xl overflow-hidden hidden"
+                            id="features">
+                            <div class="flex flex-col gap-12 h-auto p-3">
+                                <div class="h-auto flex flex-1">
+
+                                    <div class="flex flex-col gap-3 flex-1">
+                                        <h2 class="text-[15px] font-medium">COLLABORATION</h2>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3] ">
+                                            <p class="font-semibold  hover:underline">Channels</p>
+                                            <span class="font-normal text-[14px]">Orgainse teams and work</span>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Slack Connect</p>
+                                            <span class="font-normal text-[14px]">Work with external partners</span>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Messaging</p>
+                                            <span class="font-normal text-[14px]"> Chat with your team</span>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Huddles</p>
+                                            <span class="font-normal text-[14px]">Meet using audio and video</span>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Clips</p>
+                                            <span class="font-normal text-[14px]">Record and share updates</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-col gap-3  flex-1">
+                                        <h2 class="text-[15px] font-medium">AUTOMATION</h2>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Workflow Builder</p>
+                                            <span class="font-normal text-[14px]">Automate everyday tasks</span>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Apps & integrations</p>
+                                            <span class="font-normal text-[14px]">Bring your tools from Slack</span>
+                                        </div>
+
+
+                                        <div class="flex flex-col gap-3 mt-8 ">
+                                            <h2 class="text-[15px] font-medium">KNOWLEDGE</h2>
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">Search</p>
+                                                <span class="font-normal text-[14px]">Seek share knowledge</span>
+                                            </div>
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">Canvas</p>
+                                                <span class="font-normal text-[14px]">Create rich, flexible
+                                                    docs</span>
+                                            </div>
+
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">File sharing</p>
+                                                <span class="font-normal text-[14px]">Bring file into the slack of
+                                                    work</span>
+                                            </div>
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">Lists</p>
+                                                <span class="font-normal text-[14px]">Orgainse track manage
+                                                    projects</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-col gap-3  flex-1">
+                                        <h2 class="text-[15px] font-medium">INTELLIGENCE</h2>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Slack AI</p>
+                                            <span class="font-normal text-[14px]">Save time and work smarter with
+                                                powerfully simple AI</span>
+                                        </div>
+
+                                        <div class="flex flex-col justify-start gap-3 mt-5">
+                                            <h2 class="text-[15px] font-medium">ENTERPRISE PLATFORM</h2>
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">Security</p>
+                                                <span class="font-normal text-[14px]">Protect data, ensure
+                                                    compliance</span>
+                                            </div class="cursor-pointer hover:text-[#1264a3]">
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline"> Enterprise key Management
+                                                </p>
+                                                <span class="font-normal text-[14px]">Monitor and revoke
+                                                    access</span>
+                                            </div>
+
+
+                                            <div class="cursor-pointer hover:text-[#1264a3]">
+                                                <p class="font-semibold  hover:underline">Slack Atlas</p>
+                                                <span class="font-normal text-[14px]">Discover rich profile and org
+                                                    chat</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="flex items-center justify-start ">
+                                    <div class="flex items-center justify-center gap-2 text-[#1264a3] font-medium">
+                                        <a href="">Watch demo</a>
+                                        <div class="h-5 w-[1px] bg-black"></div>
+                                        <a href="">Download Slack</a>
+                                        <i class="fa-solid fa-cloud-arrow-down"
+                                            style="color: transparent; -webkit-text-stroke: 1px #1264a3;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 bg-[#f4ede4] w-60">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="text-lg font-medium">FEATURED</h2>
+                                    <img src="./footage/drop-1.png" class="h-24 w-48 object-cover" alt="Featured Image">
+                                    <p class="font-normal">Take a quick interactive tour of Slack.</p>
+                                    <h3 class=" relative text-blue-600 font-semibold cursor-pointer group ">Start the
+                                        tour <i class="fa-solid fa-arrow-right-long"></i>
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-24"></span>
+                                    </h3>
+                                    <div class="h-[0.3px] w-52 bg-slate-500"></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="font-medium cursor-pointer hover:underline">What is Slack?</h3>
+                                        <h3 class="font-medium cursor-pointer hover:underline">Slack vs Email</h3>
+                                        <h3 class="font-medium cursor-pointer hover:underline">Accessibility</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="relative "><a href="#" class="navlink">Solutions <i
+                                class="fa-solid fa-angle-down text-xs font-bold icon"></i> </a>
+                        <div
+                            class="showDropDown w-[970px] bg-white absolute top-[40px] -left-8 z-50 gap-2 rounded-2xl  justify-between  overflow-hidden pl-5  hidden shadow-custom-all-directions ">
+                            <div class="h-auto flex flex-col  gap-24 pb-3 pt-4">
+                                <div class="flex gap-10 flex-1">
+                                    <div class="flex flex-col gap-3  b">
+                                        <h2 class="text-[15px] font-medium">BY DEPARTMENT</h2>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3] ">
+                                            <p class="font-semibold  hover:underline">Engineering</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">IT</p>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Customer service</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Sales</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Projects management</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Marketing</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Human Resources</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Security</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-col gap-3 ">
+                                        <h2 class="text-[15px] font-medium">BY INDUSTRY</h2>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Manufacture, auto and energy
+                                            </p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Technology</p>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Media</p>
+
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Small business</p>
+
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Financial services</p>
+
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Retail</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Education</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-semibold  hover:underline">Health and life sciences</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex items-center justify-start ">
+                                    <div class="flex items-center justify-center gap-2 text-[#1264a3] font-medium">
+                                        <a href="">Watch demo</a>
+                                        <div class="h-5 w-[1px] bg-black"></div>
+                                        <a href="">Download Slack</a>
+                                        <i class="fa-solid fa-cloud-arrow-down"
+                                            style="color: transparent; -webkit-text-stroke: 1px #1264a3;"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-5 bg-[#f4ede4] w-60">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="text-lg font-medium">FEATURED</h2>
+                                    <img src="./footage/drop-2.png" class="h-24 w-48 object-cover" alt="Featured Image">
+                                    <p class="font-normal">How OpenAI connects customers and expands ChatGPT with
+                                        Slack
+                                    </p>
+                                    <h3 class=" relative text-blue-600 font-semibold cursor-pointer group ">Read story
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-24"></span>
+                                    </h3>
+                                    <div class="h-[0.3px] w-52 bg-slate-500"></div>
+                                    <div class="flex flex-col gap-2">
+                                        <h3 class="font-medium cursor-pointer hover:underline">Task management
+                                        </h3>
+                                        <h3 class="font-medium cursor-pointer hover:underline">Scale
+                                        </h3>
+                                        <h3 class="font-medium cursor-pointer hover:underline">Engagement
+                                        </h3>
+                                        <h3 class="font-medium cursor-pointer hover:underline">Trust
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="">Enterprise</a></li>
+
+                    <li class="relative"> <a href="#" class="navlink">Resources <i
+                                class="fa-solid fa-angle-down text-xs font-bold icon"></i> </a>
+                        <div
+                            class="showDropDown w-[830px] bg-white absolute top-[40px] -left-60 pl-2 z-50 gap-2 shadow-custom-all-directions  rounded-2xl justify-between  overflow-hidden hidden">
+                            <div class="flex flex-col gap-12 h-auto p-3">
+                                <div class="h-auto flex flex-1 w-auto gap-20">
+
+                                    <div class="flex flex-col gap-3">
+
+                                        <div class="cursor-pointer hover:text-[#1264a3] ">
+                                            <p class="font-normal  hover:underline">Resources library</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">Events</p>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">Customer stories</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">Blog</p>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="flex flex-col gap-3 ">
+                                        <div class="cursor-pointer hover:text-[#1264a3] ">
+                                            <p class="font-normal  hover:underline">What’s new</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">Events</p>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">
+                                                Community</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">
+                                                App Directory</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="flex flex-col gap-3 ">
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">
+                                                Product tour</p>
+                                        </div>
+
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">
+                                                Partners</p>
+                                        </div>
+
+                                        <div class="cursor-pointer hover:text-[#1264a3]">
+                                            <p class="font-normal  hover:underline">
+                                                Slack Certified</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="flex items-center justify-start ">
+                                    <div class="flex items-center justify-center gap-2 text-[#1264a3] font-medium">
+                                        <a href="">Watch demo</a>
+                                        <div class="h-5 w-[1px] bg-black"></div>
+                                        <a href="">Download Slack</a>
+                                        <i class="fa-solid fa-cloud-arrow-down"
+                                            style="color: transparent; -webkit-text-stroke: 1px #1264a3;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="p-4 bg-[#f4ede4] w-60">
+                                <div class="flex flex-col gap-4">
+                                    <h2 class="text-lg font-medium">FEATURED</h2>
+                                    <img src="./footage/drop-3.png" class="h-24 w-48 object-cover" alt="Featured Image">
+                                    <p class="font-normal">Tips and tricks on getting started with Slack</p>
+
+                                    <h3 class=" relative text-blue-600 font-semibold cursor-pointer group ">Start the
+                                        tour <i class="fa-solid fa-arrow-right-long"></i>
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-600 transition-all duration-300 group-hover:w-28"></span>
+                                    </h3>
+
+                                    <div class="h-[0.3px] w-52 bg-slate-500 mt-3"></div>
+                                    <div class="flex flex-col gap-2 mt-3">
+                                        <h3 class="font-semibold cursor-pointer hover:underline">Help Centre</h3>
+                                        <h3 class="font-semibold cursor-pointer hover:underline">Customer support</h3>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li> <a href="">Pricing</a></li>
+                </ul>
+
+                <div class="flex items-center ">
+                    <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                </div>
+
+                <div class="flex justify-around items-center gap-4">
+                    <div class="w-20">
+                        <p class="font-bold">Sign in</p>
+                    </div>
+                    <button
+                        class="h-12 w-36 border border-custom-purple md:hidden lg:hidden xl:block  rounded-md font-bold">TALK
+                        TO SALES</button>
+                    <button class="h-12 w-36 bg-custom-purple text-white rounded-md font-bold">GET STARTED</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div
+        class="mobile-menu fixed top-0 -right-full w-full h-full bg-white z-50 flex flex-col shadow-lg justify-between">
+        <div>
+            <div class="flex justify-between items-center h-16 bg-white-400 p-4">
+                <img class="h-9" src="./footage/slack-salesforce-logo-nav-black.png" alt="Logo">
+                <i class="fa-solid fa-xmark text-lg closeIcon cursor-pointer" id="close-mobile-menu"></i>
+            </div>
+            <ul class="flex flex-col items-start p-4 space-y-4  justify-start">
+                <li class=" w-full"><a href="#" class="mobile-navlink flex justify-between text-xl">Features
+                        <span><i class="fa-solid fa-angle-right"></i></span></a>
+                </li>
+
+
+                <li class=" w-full"><a href="#" class="mobile-navlink flex justify-between text-xl">Solutions
+                        <span><i class="fa-solid fa-angle-right"></i></span></a>
+                </li>
+
+                <li><a href="#" class="mobile-navlink text-xl">Enterprise</a></li>
+                <li class=" w-full"><a href="#" class="mobile-navlink flex justify-between text-xl">Resources
+                        <span><i class="fa-solid fa-angle-right"></i></span></a>
+                </li>
+
+                <li><a href="#" class="mobile-navlink text-xl">Pricing</a></li>
+                <li><a href="#" class="mobile-navlink font-semibold text-[#1264a3] text-xl">Watch Demo</a></li>
+                <li><a href="#" class="mobile-navlink text-xl">Sign in</a></li>
+            </ul>
+
+        </div>
+        <div class="flex items-center flex-col gap-2 mt-6 h-auto w-full p-4 justify-between">
+            <button class="h-12 w-full border border-custom-purple rounded-md font-bold">TALK TO SALES</button>
+            <button class="h-12  w-full bg-custom-purple text-white rounded-md font-bold">GET STARTED</button>
+        </div>
+    </div>
+
+    <!-- ----- mobile navlink end here----------- -->
+
+    <section class=" h-full w-full flex justify-center">
+        <div
+            class="h-full w-full relative z-20 bg-white p-7 flex text-center flex-col mt-16 gap-4 md:flex md:items-center ">
+            <h1 class="text-[34px] font-bold md:text-5xl">Made for people. <span class="text-custom-purple"> Built for
+                    productivity.</span></h1>
+            <button class="w-full h-14 rounded-lg text-white bg-custom-purple lg:w-48">GET STARTED</button>
+            <p class="text-lg font-bold">Slack is free to try for as long as you like</p>
+
+            <div class="flex flex-wrap gap-8 items-center justify-center mt-5">
+                <img class="h-7" src="./footage/logo-airbnb-small.png" alt="">
+                <img class="h-11" src="./footage/logo-nasa-small.png" alt="">
+                <img class="h-5" src="./footage/logo-uber-small.png" alt="">
+                <img class="h-9" src="./footage/logo-target-small.png" alt="">
+                <img class="h-9" src="./footage/logo-nyt-small.png" alt="">
+                <img class="h-7" src="./footage/logo-etsy-small.png" alt="">
+            </div>
+
+
+            <div class="flex justify-center mt-8 z-40">
+                <video class="h-60 sm:h-96 lg:h-[540px] w-full rounded-xl" loop muted autoplay>
+                    <source src="./footage/slack_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="h-[40%] w-full  bg-[#F4EDE4] absolute bottom-0 z-30 left-0 ">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F4EDE4] w-full h-full py-10">
+
+        <div
+            class="flex flex-col gap-4 items-start pt-8 xl:w-[70%] lg:w-full lg:flex-row xl:gap-5 lg:items-center xl:flex lg:justify-between xl:m-auto xl:items-center ">
+
+            <video class="h-[400px] rounded-xl md:hidden" loop muted autoplay>
+                <source src="./footage/slack_mobile_1.webm" type="video/mp4">
+            </video>
+
+            <video class="md:h-[360px] rounded-xl  md:flex hidden xl:w-7/12 " loop muted autoplay>
+                <source src="./footage/slack_2.webm" type="video/mp4">
+            </video>
+
+            <div class="flex flex-col p-4 gap-3 h-auto lg:w-5/12 ">
+                <h1 class="text-[34px] font-bold -tracking-wider leading-9 lg:text-5xl">Move faster with your tools in
+                    one place</h1>
+                <p class="text-lg font-semibold">Automate away routine tasks with the power of generative AI and
+                    simplify your workflow with all your favourite apps ready to go in Slack.</p>
+                <a href="" class="text-lg text-[#1279B9] lg:effects ">Learn more about the Slack platform <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-[#F4EDE4] w-full h-full py-10">
+
+        <div
+            class="flex flex-col-reverse gap-4 items-end pt-8 xl:w-[70%] lg:w-full lg:items-center lg:flex-row xl:gap-5 xl:flex lg:justify-between xl:m-auto xl:items-center ">
+
+            <div class="flex flex-col p-4  gap-3 h-auto lg:w-5/12 ">
+                <h1 class="text-[34px] font-bold -tracking-wider leading-9 lg:text-5xl">Choose how you want to work</h1>
+                <p class="text-lg font-semibold">In Slack, you’ve got all the flexibility to work when, where and how
+                    it’s best for you. You can easily chat, send audio and video clips, or join a huddle to talk things
+                    through live..</p>
+                <a href="" class="text-lg text-[#1279B9] lg:effects">Learn more about flexible communication <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <video class="h-[400px] rounded-xl md:hidden" loop muted autoplay>
+                <source src="./footage/slack_mobile_2.mp4" type="video/mp4">
+            </video>
+
+            <video class="md:h-[360px] rounded-xl  md:flex hidden xl:w-7/12 " loop muted autoplay>
+                <source src="./footage/slack_3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
+    <section class="bg-[#F4EDE4] w-full h-full py-10">
+
+        <div
+            class="flex flex-col gap-4 items-start pt-8 xl:w-[70%] lg:w-full lg:items-center lg:flex-row xl:gap-5 xl:flex lg:justify-between xl:m-auto  xl:items-center ">
+
+            <video class="h-[400px] rounded-xl md:hidden" loop muted autoplay>
+                <source src="./footage/slack_mobile_3.mp4" type="video/mp4">
+            </video>
+
+            <video class="md:h-[360px] rounded-xl  md:flex hidden xl:w-7/12 " loop muted autoplay>
+                <source src="./footage/slack_4.mp4" type="video/mp4">
+            </video>
+
+            <div class="flex flex-col p-4  gap-3 h-auto lg:w-5/12 ">
+                <h1 class="text-[34px] font-bold -tracking-wider leading-9 lg:text-5xl">Bring your team together</h1>
+                <p class="text-lg font-semibold">At the heart of Slack are channels: organised spaces for everyone and
+                    everything that you need for work. In channels, it’s easier to connect across departments, offices,
+                    time zones and even other companies.</p>
+                <a href="" class="text-lg text-[#1279B9] lg:effects">Learn more about channels<i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="h-full w-full flex items-center justify-center">
+
+        <div class="px-4 py-16 w-full flex justify-center items-center flex-col gap-4 lg:gap-6 text-center lg:py-24">
+
+            <h1 class="text-3xl font-bold lg:text-5xl">Teams large and small rely on Slack</h1>
+            <p class="text-lg font-semibold">Slack securely scales up to support collaboration at the world’s biggest
+                companies.</p>
+            <div class="flex flex-wrap gap-4">
+                <button class="w-full h-14 rounded-lg text-white bg-custom-purple lg:w-72 font-semibold">MEET SLACK FOR
+                    ENTERPRISE</button>
+                <button
+                    class="w-full h-14 rounded-lg text-custom-purple border border-custom-purple lg:w-48 font-semibold">TALK
+                    TO SALES</button>
+            </div>
+
+            <div class="flex flex-wrap w-[80%] items-center justify-evenly py-14 gap-5 m-auto ">
+
+                <div class="flex flex-col items-center justify-start text-center gap-3 w-60">
+                    <h1 class="text-5xl lg:text-6xl text-custom-purple  font-bold">85%</h1>
+                    <p class="">of users say that Slack has improved communication*</p>
+                </div>
+
+                <div class="flex flex-col items-center justify-start text-center gap-3 w-60">
+                    <h1 class="text-5xl lg:text-6xl  text-custom-purple font-bold">86%</h1>
+                    <p>feel that their ability to work remotely has improved*</p>
+                </div>
+
+                <div class="flex flex-col items-center justify-start text-center gap-3 w-60">
+                    <h1 class="text-5xl lg:text-6xl  text-custom-purple font-bold">88%</h1>
+                    <p>feel more connected to their teams*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-full w-full flex flex-col items-center justify-center pr-2 py-8">
+
+        <div
+            class="flex items-center flex-col lg:flex lg:flex-row justify-center lg:m-auto gap-12 lg:px-6 max-w-[1530px]">
+
+            <div class="relative lg:w-[50%] py-3 ">
+                <video class="clip w-full h-auto md:h-[410px] hover" loop muted autoplay>
+                    <source src="./footage/slack_5.mp4" type="video/mp4">
+                </video>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div
+                        class="h-16 w-24 rounded bg-[#36c5f0] z-30 flex items-center justify-center  hover:bg-gray-600 ">
+                        <i class="fa-solid fa-play text-white"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-start flex flex-col gap-4 lg:w-[50%] p-7">
+                <h1 class=" md:text-[28px] italic text-[22px] font-normal">‘Many technology employees were gravitating
+                    naturally to Slack. So we followed our users to what has
+                    become one of our most important tools.’</h1>
+                <div>
+                    <h1 class="font-bold">Matt Beal</h1>
+                    <p class="font-semibold">Director of Technology Strategy and Architecture, Vodafone</p>
+                </div>
+                <a href="" class="text-lg text-[#1279B9] lg:effects">Learn more about channels<i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="px-5 text-center">
+            <p class="items-center m-auto text-sm">* Weighted average. Based on 2,707 survey responses from weekly Slack
+                users in the US, UK, Australia and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
+        </div>
+    </section>
+
+
+    <section class="bg-[#F4EDE4] h-full w-full flex flex-col items-center justify-center px-6 py-11 gap-4">
+
+        <h1 class="text-[25px] font-bold text-center md:text-[32px]">Take a deeper dive into a new way to work</h1>
+
+        <div class="flex flex-wrap items-center m-auto gap-9 justify-center">
+            <div
+                class="flex flex-col justify-between h-[420px] w-[285px] items-center p-5 bg-white hover:scale-110 hover:shadow-2xl transition duration-300 ease-in-out">
+                <div class="h-[50%] w-full">
+                    <img src="footage/card_1.png" alt="">
+                </div>
+
+                <div class="flex flex-col justify-between  h-[50%] w-full">
+                    <div class="flex flex-col items-start justify-between ">
+                        <p>Event</p>
+                        <h1 class="text-[22px] font-bold">Ready for the future of AI in Slack?</h1>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#1279B9] font-bold">WATCH ON DEMAND</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-col justify-between h-[420px] w-[285px] items-center p-5 bg-white hover:scale-110 hover:shadow-2xl transition duration-300 ease-in-out">
+                <div class="h-[50%] w-full">
+                    <img src="footage/card_2" alt="">
+                </div>
+
+                <div class="flex flex-col justify-between h-[50%] w-full">
+                    <div class="flex flex-col items-start justify-between">
+                        <p>Blog</p>
+                        <h1 class="text-[22px] font-bold">Ten features to know (and love) on Slack’s
+                            tenth birthday</h1>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#1279B9] font-bold">WATCH ON DEMAND</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-wrap h-[420px] w-[285px] items-center p-5 bg-white hover:scale-110 hover:shadow-2xl transition duration-300 ease-in-out">
+                <div class="h-[50%] w-full">
+                    <img src="footage/card_3.jpg" alt="">
+                </div>
+
+                <div class="flex flex-col justify-between h-[50%] w-full">
+                    <div class="flex flex-col items-start  justify-between">
+                        <p>Customer story</p>
+                        <h1 class="text-[22px] font-bold">How OpenAI expands ChatGPT with Slack</h1>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#1279B9] font-bold">WATCH ON DEMAND</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="flex flex-wrap h-[420px] w-[285px] items-center p-5 bg-white hover:scale-110 hover:shadow-2xl transition duration-300 ease-in-out">
+                <div class="h-[50%] w-full">
+                    <img src="footage/card_4.jpg" alt="">
+                </div>
+
+                <div class="flex flex-col justify-between h-[50%] w-full">
+                    <div class="flex flex-col items-start justify-between">
+                        <p>Webinar</p>
+                        <h1 class="text-[22px] font-bold">Top Slack tips to boost productivity</h1>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <h2 class="text-[#1279B9] font-bold">WATCH ON DEMAND</h2>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="notuse min-h-96 w-full bg-[#4A154B] flex items-center justify-between py-6">
+        <div class="flex flex-col m-auto px-8 gap-3 md:gap-6">
+            <h1 class="lg:text-[50px] text-[34px] text-white text-center">See all that you can accomplish with Slack
+            </h1>
+            <div class="flex flex-wrap items-center justify-center gap-3">
+                <button class="h-12 w-full md:w-[182px] bg-white text-custom-purple rounded-md font-bold">GET
+                    STARTED</button>
+                <button
+                    class="h-12 w-full border border-white text-white  md:w-[182px] rounded-md font-bold  hover:border-2">TALK
+                    TO SALES</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="h-full w-full flex flex-col items-center justify-center py-10 px-6 ">
+
+        <div class="flex flex-col items-center justify-between m-auto md:flex md:flex-row md:w-[60%] gap-6">
+            <h1 class="font-bold"><i class="fa-solid fa-globe"></i> Change region <i class="fa-solid fa-angle-down"></i>
+            </h1>
+
+            <div class="flex items-center justify-center gap-5 text-lg">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="h-full w-full flex flex-col items-center justify-center gap-12 p-7">
+
+        <div class="border w-[70%] m-auto"></div>
+
+
+        <div class="flex flex-col md:flex md:flex-row md:justify-center md:w-auto h-auto w-full gap-8 ">
+
+            <div class="h-20 w-24 hidden md:block">
+                <img class="h-full w-full" src="./footage/logo.png" alt="">
+            </div>
+
+            <div class="flex flex-col items-start md:flex md:flex-row gap-10 w-full">
+                <div class="flex-col flex items-start justify-start gap-10 list-none w-full md:w-auto">
+                    <div class="flex-col flex items-start justify-center gap-3 px-3 w-full md:w-auto">
+                        <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                            <h1 class="font-bold">PRODUCT</h1>
+                            <div class="md:hidden">
+                                <i class="fa-solid fa-angle-right block icon"></i>
+                            </div>
+                        </div>
+                        <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                            <li>Watch demo</li>
+                            <li>Pricing</li>
+                            <li>Paid vs Free</li>
+                            <li>Accessibility</li>
+                            <li>Featured releases</li>
+                            <li>Change log</li>
+                            <li>Status</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex-col flex items-start justify-center gap-3 px-3 w-full md:w-auto">
+                        <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                            <h1 class="font-bold">WHY SLACK ?</h1>
+                            <div class="md:hidden">
+                                <i class="fa-solid fa-angle-right block icon"></i>
+                            </div>
+                        </div>
+                        <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                            <li>Slack vs email</li>
+                            <li>Enterprise</li>
+                            <li>Small business</li>
+                            <li>Productivity</li>
+                            <li>Task management</li>
+                            <li>Scale</li>
+                            <li>Trust</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex-col flex items-start justify-center gap-3 px-3 list-none w-full md:w-auto">
+                    <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                        <h1 class="font-bold">FEATURES</h1>
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-angle-right block icon"></i>
+                        </div>
+                    </div>
+                    <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                        <li>Channels</li>
+                        <li>Slack Connect</li>
+                        <li>Messaging</li>
+                        <li>Huddles</li>
+                        <li>Canvas</li>
+                        <li>Lists</li>
+                        <li>Clips</li>
+                        <li>Search</li>
+                        <li>Apps & integrations</li>
+                        <li>File sharing</li>
+                        <li>Slack AI</li>
+                        <li>Security</li>
+                        <li>Enterprise Key Management</li>
+                        <li>Slack Atlas</li>
+                    </ul>
+                </div>
+
+                <div class="flex-col flex items-start justify-center gap-3 px-3 list-none w-full md:w-auto">
+                    <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                        <h1 class="font-bold">SOLUTIONS</h1>
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-angle-right block icon"></i>
+                        </div>
+                    </div>
+                    <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                        <li>Engineering</li>
+                        <li>IT</li>
+                        <li>Customer service</li>
+                        <li>Sales</li>
+                        <li>Project management</li>
+                        <li>Marketing</li>
+                        <li>Security</li>
+                        <li>Technology</li>
+                        <li>Media</li>
+                        <li>Financial services</li>
+                        <li>Retail</li>
+                        <li>Public sector</li>
+                        <li>Education</li>
+                        <li>Health and life sciences</li>
+                        <li>See all solutions</li>
+                    </ul>
+                </div>
+
+                <div class="flex-col flex items-start justify-center gap-3 px-3 list-none w-full md:w-auto">
+                    <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                        <h1 class="font-bold">RESOURCES</h1>
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-angle-right block icon"></i>
+                        </div>
+                    </div>
+                    <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                        <li>Help Centre</li>
+                        <li>What’s new</li>
+                        <li>Resources library</li>
+                        <li>Slack blog</li>
+                        <li>Community</li>
+                        <li>Customer stories</li>
+                        <li>Events</li>
+                        <li>Developers</li>
+                        <li>Partners</li>
+                        <li>Partner offers</li>
+                        <li>App Directory</li>
+                        <li>Slack Certified</li>
+                    </ul>
+                </div>
+
+                <div class="flex-col flex items-start justify-center gap-3 px-3 list-none w-full md:w-auto">
+                    <div class="flex justify-between items-center w-full cursor-pointer head_box">
+                        <h1 class="font-bold">COMPANY</h1>
+                        <div class="md:hidden">
+                            <i class="fa-solid fa-angle-right block icon"></i>
+                        </div>
+                    </div>
+                    <ul class=" flex-col gap-2 hidden lg:flex show_list">
+                        <li>About us</li>
+                        <li>News</li>
+                        <li>Media kit</li>
+                        <li>Brand centre</li>
+                        <li>Careers</li>
+                        <li>Slack shop</li>
+                        <li>Engineering blog</li>
+                        <li>Design blog</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="border w-[70%] m-auto">
+        </div>
+
+    </section>
+
+
+    <section class="h-full w-full flex flex-col gap-10  md:gap-2 p-4  md:flex md:items-center md:justify-center">
+
+        <div class="h-20 w-24 block md:hidden">
+            <img class="h-full w-full" src="./footage/logo.png" alt="">
+        </div>
+
+        <div
+            class="m-auto flex-col items-start gap-5 flex md:flex md:flex-row flex-wrap md:m-auto md:justify-evenly md:w-[70%] md:">
+
+            <div class="text-sm">
+                <a href="">Download Slack <i class="fa-solid fa-download"></i></a>
+            </div>
+
+            <div class="flex gap-4 text-sm">
+                <p>Privacy</p>
+                <p>Terms</p>
+                <p>Cookie preferences</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <p class="text-[15px]">Your privacy choices</p>
+                <svg fill="none" class="privacy-icon" height="14" viewBox="0 0 30 14" width="30" role="presentation">
+                    <path clip-rule="evenodd"
+                        d="m7.39998 12.8h6.80002l3.1-11.60005h-9.90002c-3.2 0-5.8 2.6-5.8 5.8 0 3.20005 2.6 5.80005 5.8 5.80005z"
+                        fill="#fff" fill-rule="evenodd"></path>
+                    <path clip-rule="evenodd"
+                        d="m22.6 0h-15.19998c-3.9 0-6.999996 3.1-6.999996 7s3.099996 7 6.999996 7h15.19998c3.9 0 7-3.1 7-7s-3.2-7-7-7zm-20.99998 7c0-3.2 2.6-5.8 5.8-5.8h9.89998l-3.1 11.6h-6.79998c-3.2 0-5.8-2.6-5.8-5.8z"
+                        fill="#06f" fill-rule="evenodd"></path>
+                    <path
+                        d="m24.6001 4.0001c.2.2.2.6 0 .8l-2.1 2.2 2.2 2.2c.2.2.2.6 0 .8s-.6.2-.8 0l-2.2-2.2-2.2 2.2c-.2.2-.6.2-.8 0s-.2-.6 0-.8l2.1-2.2-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l2.2 2.2 2.2-2.2c.2-.2.6-.2.8 0z"
+                        fill="#fff"></path>
+                    <path
+                        d="m12.7 4.09995c.2.2.3.6.1.8l-4.2 4.9c-.1.1-.2.2-.3.2-.2.10005-.5.10005-.7-.1l-2.2-2.2c-.2-.2-.2-.6 0-.8s.6-.2.8 0l1.8 1.7 3.8-4.5c.2-.2.6-.2.9 0z"
+                        fill="#06f"></path>
+                </svg>
+            </div>
+
+            <div class="text-start md:text-right text-[15px]">
+                <h1>©2024 Slack Technologies, LLC, a Salesforce company. All rights reserved. </h1>
+                <h1>Various trademarks held by their respective owners.</h1>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="app.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
